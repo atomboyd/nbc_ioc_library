@@ -1,0 +1,25 @@
+{
+  "name": "nbc_ioc_library",
+  "version": "1.0.0",
+  "description": "NBC take home code test library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomboyd/nbc_ioc_library.git"
+  },
+  "author": "Adam Boyd",
+  "engines": {
+    "node": ">=8.17"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atomboyd/nbc_ioc_library/issues"
+  },
+  "homepage": "https://github.com/atomboyd/nbc_ioc_library#readme",
+  "devDependencies": {
+    "mocha": "^10.1.0"
+  }
+}
