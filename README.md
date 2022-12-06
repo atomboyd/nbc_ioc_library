@@ -10,3 +10,19 @@ We are interested to see:
 - How you set up the code for further collaborative development
 - Your approach to testing
 - How you deal with feature gaps and edge cases
+
+
+# POST MORTEM NOTES:
+
+Future revisions:
+- I could check for circular dependencies tracking whether an item is being resolved in a separate cache / data set. 
+- If the item is already being resolved, we have a circular dependency, so throw an error
+- Otherwise add the item to the set of items being resolved
+- Get the item from the map
+- If the item is not found, throw an error
+- Remove the item from the set of items being resolved
+- Return the resolved item
+
+Building out the call signature to be more extensible
+- Type checking for obj argument, and allow for factory to be passed in for creation of more complex methods with multiple dependencies
+- Acceptance of multiple depencies in an array 
